@@ -63,6 +63,9 @@ Challenges encountered:
   shimming this isn't the case.  Consequently, restler is used server side and cljs-ajax is used
   client side with a facade to hide the differences from the app.
   
+* When a page is first rendered that calls an API, both the server side and client side will attempt to execute
+  the query unless additional logic is added.
+  
 * More to come ...   
  
 ## Components
