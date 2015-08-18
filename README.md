@@ -27,6 +27,8 @@ infra/setup.sh
 
 ## Starting the server
 
+For now, you'll want to perform the following operations in two shells.
+
 Shell #1
 
 ```
@@ -41,8 +43,8 @@ infra/server.sh
 
 The following URLs are enabled:
 
-* (http://localhost:3000/home)[http://localhost:3000/home]
-* (http://localhost:3000/weather/london)[http://localhost:3000/weather/london]
+* [http://localhost:3000/home](http://localhost:3000/home)
+* [http://localhost:3000/weather/london](http://localhost:3000/weather/london)
 
 ## License
 
