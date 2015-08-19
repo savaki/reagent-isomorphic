@@ -46,6 +46,13 @@ The following URLs are enabled:
 * [http://localhost:3000/home](http://localhost:3000/home)
 * [http://localhost:3000/weather/london](http://localhost:3000/weather/london)
 
+## Environment Variables
+
+| Name | Description | Default |
+| :--- | :--- | :--- |
+| NODE | location of either node or nodemon | node |
+| DOCROOT | static content home; must include cljs->js code | target/dev |
+
 ## Concepts
 
 As much as possible, I've tried to minimize the need for ```serverSide?``` and ```clientSide?``` 
