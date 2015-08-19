@@ -2,7 +2,7 @@
 
 # allow users to specify location of node or nodemon
 #
-NODE=${NODE:node}
+BIN=${NODE:=node}
 
 # where is this script located; absolute path
 #
@@ -12,4 +12,4 @@ SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 #
 export DOCROOT="${SCRIPTPATH}/../target/dev"
 
-(cd $(dirname $0)/../target/node; ${NODE} server.js)
+(cd $(dirname $0)/../target/node; ${BIN} server.js)

@@ -28,7 +28,8 @@
 ; render-page is the REQUIRED entry point for page rendering
 ;
 (defn ^:export render-page [state]
-  (let [page (get @state "page")]
+  (let [page (get @state "page")
+        page (if (nil? page) "home" page)]
     (println "rendering" page "page")
     (cond (= page "weather") (weather-page/render state)
           :else (home-page/render state))))
