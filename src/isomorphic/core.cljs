@@ -55,4 +55,5 @@
         action (or action identity)
         params (merge params query-params)
         params (assoc params :callback callback :state state)]
-    (action params)))
+    (action params)
+    nil))                                                   ; HACK - without this, secretary/core.cljs:305 throws a s.replace is not a function
