@@ -22,7 +22,7 @@
 ; weather-in-london shows server and client side calls
 ;
 (defn weather-in-london [{:keys [callback state]}]
-  (let [url "http://api.openweathermap.org/data/2.5/weather?q=London,uk"]
+  (let [url "http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=bd82977b86bf27fb59a04b61b657fb6f"]
     (ajax/GET url {:handler #(callback (assoc-js % "page" "weather"))})))
 
 ; render-page is the REQUIRED entry point for page rendering
