@@ -8,8 +8,17 @@
                  [reagent "0.5.0"]
                  [cljs-ajax "0.3.14"]]
 
+  :node-dependencies [[express "4.13.3"]
+                      [st "0.5.5"]
+                      [restler "3.3.0"]]
+
   :plugins [[lein-environ "1.0.0"]
-            [lein-cljsbuild "1.0.4"]]
+            [lein-cljsbuild "1.0.4"]
+            [lein-npm "0.6.1"]]
+
+  :npm {:root "target/node"}
+
+  :clean-targets ["target"]
 
   :cljsbuild {:builds [{:id           "dev"
                         :source-paths ["src"]

@@ -6,7 +6,7 @@ global.XMLHttpRequest = {
     ajax$core$AjaxImpl$: false,
   }
 };
-global.React = require("./react.js");
+global.React = require("./react.inc.js");
 global.window = {
   attachEvent: function (eventName, callback) {
     return {
@@ -31,7 +31,7 @@ global.document = {
 // HACK - really hate having to define this here but couldn't figure out
 // a way to satisfy the cljs requires on both server and client side
 //
-global.restler = require("restler");
+global.restler = require("./node_modules/restler");
 global.state = {};
 
 // ----------------------------------------------------------------------
